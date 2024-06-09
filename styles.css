@@ -1,11 +1,41 @@
 body {
     display: flex;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
 }
 
 /* || BLOCKS || */
 
+.heading {
+    color: white;
+    font-size: 30px;
+}
 
+.container {
+
+    display: flex;
+    background-color: darkcyan;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+
+}
+
+.grid {
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+}
+
+.controls {
+    border: 1px solid black;
+    width: 800px;
+    height: 80px;
+}
 
 
 /* || ELEMENT || */

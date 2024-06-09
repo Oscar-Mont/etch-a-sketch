@@ -1,8 +1,10 @@
 //grid
 
-const body = document.querySelector("body");
-const container = document.querySelector(".container");
+const container = document.querySelector(".grid");
 
 function grid(numOFDivs) {
 
 }
+
+//hover button
+
