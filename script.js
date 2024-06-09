@@ -14,6 +14,8 @@ function createGridItems() {
     }
 }
 
+
+//EVENT LISTENERS
 startBtn.addEventListener("click", () => {
     createGridItems();
     startBtn.disabled = true;
@@ -21,5 +23,9 @@ startBtn.addEventListener("click", () => {
 
 resetBtn.addEventListener("click", () => {
     //pending to add functionality that resets the grid
+    while (grid.firstChild = true) {
+        grid.removeChild(grid.firstChild);
+    }
     startBtn.disabled = false;
 })
+
