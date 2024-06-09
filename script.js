@@ -6,19 +6,25 @@ const startBtn = document.querySelector(".start-button")
 const resetBtn = document.querySelector(".reset-button");
 
 function createGridItems() {
+
     let numOfDivs = inputNumber.value * inputNumber.value;
     for (let i = 0; i < numOfDivs; i++) {
         const gridSquare = document.createElement("div");
         gridSquare.classList.add("grid-square");
         grid.appendChild(gridSquare);
     }
+
 }
 
 
 //EVENT LISTENERS
 startBtn.addEventListener("click", () => {
-    createGridItems();
-    startBtn.disabled = true;
+    if (inputNumber.value > 100) {
+        alert("Invalid Input. Please change the number!");
+    } else {
+        createGridItems();
+        startBtn.disabled = true;
+    }
 })
 
 resetBtn.addEventListener("click", () => {

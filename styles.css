@@ -1,3 +1,5 @@
+/* || DOCUMENT || */
+
 body {
     display: flex;
     flex-direction: column;
@@ -6,7 +8,6 @@ body {
     background-color: black;
 }
 
-/* || BLOCKS || */
 
 .heading {
     color: white;
@@ -16,14 +17,16 @@ body {
 .container {
 
     display: flex;
-    background-color: darkcyan;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-color: darkcyan;
     width: 1000px;
     height: 500px;
 
 }
+
+/* || GRID || */
 
 .grid {
     display: flex;
@@ -31,8 +34,16 @@ body {
     border: 1px solid black;
     width: 400px;
     height: 400px;
+    overflow: hidden;
 }
 
+.grid-square {
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+}
+
+/* || CONTROLS PANEL || */
 
 .controls {
     display: flex;
@@ -42,29 +53,20 @@ body {
     height: 80px;
 }
 
-.btn-container {}
-
-
-/* || ELEMENT || */
-
-.grid-square {
-    flex-basis: calc(100%/var(--num-of-squares));
-    border: 1px solid black;
-    width: 10px;
-    height: 10px;
+.grid-menu {
+    display: flex;
+    flex-direction: column;
 
 }
 
 .start-button {
-    width: 50px;
+    width: 120px;
     height: 80px;
     padding: auto;
     text-align: center;
 }
 
 .reset-button {
-    width: 50px;
+    width: 120px;
     height: 80px;
 }
-
-/* || MODIFIERS || */
