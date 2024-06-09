@@ -5,18 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 
 <body>
     <h1 class="heading">Etch-A-Sketch Game</h1>
     <div class="container">
-        <div class="grid">grid</div>
-        <div class="controls">controls
-            <div class="grid-menu">
-                <button class="dropdown">Grid Options</button>
-            </div>
+        <div class="grid"></div>
+        <div class="controls">
+            <button class="start-button">Start Game</button>
             <button class="reset-button">Reset</button>
+            <div class="grid-menu">
+                <label>Pick the number for Rows and Columns</label>
+                <input type="number">
+                <div class="btn-container">
+                    <button class="4-btn"></button>
+                    <button class="4-btn"></button>
+                    <button class="4-btn"></button>
+                    <button class="4-btn"></button>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
