@@ -30,17 +30,25 @@ body {
 
 .grid {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
     border: 1px solid black;
     width: 400px;
     height: 400px;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.grid-row {
+    display: flex;
+    flex: 1;
+    border: 1px dotted red;
+    height: 20px;
 }
 
 .grid-square {
+    flex: 1;
     border: 1px solid black;
-    width: 10px;
-    height: 10px;
+    /* Adjust as needed */
 }
 
 /* || CONTROLS PANEL || */
