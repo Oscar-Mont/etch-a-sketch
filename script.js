@@ -1,11 +1,12 @@
 
+//VARIABLES
 const grid = document.querySelector(".grid");
 const inputNumber = document.querySelector("input");
 const startBtn = document.querySelector(".start-button");
 const resetBtn = document.querySelector(".reset-button");
 
 
-
+//FUNCTIONS
 function createGridItems() {
 
     for (let i = 0; i < inputNumber.value; i++) {
@@ -16,25 +17,15 @@ function createGridItems() {
             const cellItem = document.createElement("div");
             cellItem.classList.add("grid-square");
             rowItem.appendChild(cellItem);
+            cellItem.addEventListener("mouseover", () => {
+                cellItem.style["background-color"] = "red";
+            })
         }
+
     }
 }
 
-// function createGridItems() {
-
-//     let numOfDivs = inputNumber.value * inputNumber.value;
-//     for (let i = 0; i < numOfDivs; i++) {
-//         const gridSquare = document.createElement("div");
-//         gridSquare.classList.add("grid-square");
-//         grid.appendChild(gridSquare);
-//     }
-
-// }
-
-
 //EVENT LISTENERS
-
-
 
 startBtn.addEventListener("click", () => {
     if (inputNumber.value > 100) {
@@ -45,8 +36,6 @@ startBtn.addEventListener("click", () => {
     }
 })
 
-
-
 resetBtn.addEventListener("click", () => {
     while (grid.firstChild) {
         grid.removeChild(grid.firstChild);
@@ -54,4 +43,11 @@ resetBtn.addEventListener("click", () => {
     startBtn.disabled = false;
 })
 
-console.log(inputNumber.value)
+//not working
+// squareDivs = document.getElementsByClassName("grid-square");
+
+// for (let i = 0; i < squareDivs.length; i++) {
+//     squareDivs[i].addEventListener("mouseover", () => {
+//         squareDivs.style["background-color"] = "red";
+//     })
+// }
