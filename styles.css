@@ -1,17 +1,25 @@
 /* || DOCUMENT || */
 
+/* * {
+    border: 1px solid red;
+} */
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: white;
 }
 
 
 .heading {
+    text-align: center;
     color: white;
+    width: 100%;
     font-size: 30px;
+    background-color: #738FA7;
+    padding: 30px;
 }
 
 .container {
@@ -20,7 +28,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: darkcyan;
+    background-color: white;
     width: 1000px;
     height: 500px;
 
@@ -32,6 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-color: #C3CEDA;
     border: 1px solid black;
     width: 400px;
     height: 400px;
@@ -41,7 +50,6 @@ body {
 .grid-row {
     display: flex;
     flex: 1;
-    border: 1px dotted red;
     height: 20px;
 }
 
@@ -51,15 +59,12 @@ body {
     /* Adjust as needed */
 }
 
-/* .grid-square:hover {
-    background-color: blue;
-} */
-
 /* || CONTROLS PANEL || */
 
 .controls {
     display: flex;
     justify-content: center;
+    background-color: #738FA7;
     border: 1px solid black;
     width: 800px;
     height: 80px;
@@ -68,17 +73,23 @@ body {
 .grid-menu {
     display: flex;
     flex-direction: column;
+    margin: 15px;
 
 }
 
 .start-button {
     width: 120px;
-    height: 80px;
+    height: 30px;
     padding: auto;
+    margin: 20px;
     text-align: center;
+    background-color: green;
 }
 
 .reset-button {
     width: 120px;
-    height: 80px;
+    height: 30px;
+    padding: auto;
+    margin: 20px;
+    background-color: yellow;
 }

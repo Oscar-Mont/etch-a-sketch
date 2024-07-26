@@ -8,7 +8,6 @@ const resetBtn = document.querySelector(".reset-button");
 
 //FUNCTIONS
 function createGridItems() {
-
     for (let i = 0; i < inputNumber.value; i++) {
         const rowItem = document.createElement("div");
         rowItem.classList.add("grid-row");
@@ -18,11 +17,29 @@ function createGridItems() {
             cellItem.classList.add("grid-square");
             rowItem.appendChild(cellItem);
             cellItem.addEventListener("mouseover", () => {
-                cellItem.style["background-color"] = "red";
+                cellItem.style["background-color"] = "blue";
             })
         }
 
     }
+}
+
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function randomColor() {
+    let r = getRndInteger(0, 255);
+    let g = getRndInteger(0, 255);
+    let b = getRndInteger(0, 255);
+
+    r = r.toString();
+    g = g.toString();
+    b = b.toString();
+    let rgb = r + " " + g + " " + b;
+
+    return rgb
 }
 
 //EVENT LISTENERS
@@ -42,12 +59,3 @@ resetBtn.addEventListener("click", () => {
     }
     startBtn.disabled = false;
 })
-
-//not working
-// squareDivs = document.getElementsByClassName("grid-square");
-
-// for (let i = 0; i < squareDivs.length; i++) {
-//     squareDivs[i].addEventListener("mouseover", () => {
-//         squareDivs.style["background-color"] = "red";
-//     })
-// }
