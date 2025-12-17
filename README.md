@@ -1,10 +1,6 @@
 # etch-a-sketch
 
-This project is part of the Odin Project's Program. 
-
-The intention is to make a simple web based game that behaves like an etch-a-sketch.
-
-The purpose of this project is to practice DOM manipulation with JavaScript, as well as flexbox. 
+One of my first programming projects,and yet, one of my favourites. The goal was to practice JS DOM manipulation by creating an etch a sketch game on the web.
 
 
 
